@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA: running</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/qa/qa.css">
+</head>
+<body data-view="qa">
+  <main class="qa">
+    <h1>Browser tests</h1>
+    <p class="muted">Client-side logic that needs a real DOM (paste cleaner, formatting helpers). Open this page to run them; the tab title shows the result.</p>
+    <p id="summary" class="summary" role="status">Running…</p>
+    <ul id="results" class="results"></ul>
+  </main>
+  <script type="module" src="/qa/run.js"></script>
+</body>
+</html>

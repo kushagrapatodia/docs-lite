@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: docs-lite
+    runtime: docker
+    plan: starter
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
+    healthCheckPath: /readyz
+    envVars:
+      - key: DATA_DIR
+        value: /data
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: METRICS_TOKEN
+        generateValue: true

@@ -1,0 +1,13 @@
+{
+  "name": "docs-lite",
+  "version": "1.0.0",
+  "description": "Lightweight collaborative document editor (take-home for Ajaia)",
+  "private": true,
+  "engines": {
+    "node": ">=22.16"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-timeout=30000 \"test/*.test.js\""
+  }
+}

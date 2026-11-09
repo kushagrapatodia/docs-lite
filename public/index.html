@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Docs Lite: a lightweight collaborative document editor.">
+  <title>Docs Lite</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-view="auth">
+  <a class="skip" href="#view">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#/" id="brand" aria-label="Docs Lite home">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6M9 8h2"/></svg>
+      <span>Docs Lite</span>
+    </a>
+    <div id="userbox" class="userbox"></div>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <div id="toasts" class="toasts"></div>
+  <noscript><p class="noscript">Docs Lite needs JavaScript to run.</p></noscript>
+  <link rel="modulepreload" href="/js/main.js">
+  <link rel="modulepreload" href="/js/dom.js">
+  <link rel="modulepreload" href="/js/api.js">
+  <link rel="modulepreload" href="/js/views/list.js">
+  <link rel="modulepreload" href="/js/views/auth.js">
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

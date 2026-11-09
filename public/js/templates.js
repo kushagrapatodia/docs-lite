@@ -1,0 +1,15 @@
+// Starter documents for "New document". The markup uses only what the editor and the server's sanitiser keep.
+const tbl = (head, rows) => `<table><thead><tr>${head.map((c) => `<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${c || '<br>'}</td>`).join('')}</tr>`).join('')}</tbody></table><p><br></p>`;
+const checks = (items) => `<ul data-type="check">${items.map((i) => `<li>${i}</li>`).join('')}</ul>`;
+const date = () => new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+
+export const TEMPLATES = [
+  { id: 'blank', name: 'Blank', desc: 'Start from an empty page', title: 'Untitled document', html: () => '' },
+  { id: 'meeting', name: 'Meeting notes', desc: 'Agenda, notes and action items', title: 'Meeting notes', html: () => `<h1>Meeting notes</h1><p><b>Date:</b> ${date()}</p><p><b>Attendees:</b> </p><h2>Agenda</h2><ol><li><br></li></ol><h2>Notes</h2><p><br></p><h2>Decisions</h2><ul><li><br></li></ul><h2>Action items</h2>${tbl(['Owner', 'Task', 'Due'], [['', '', ''], ['', '', '']])}` },
+  { id: 'project', name: 'Project brief', desc: 'Goals, scope, timeline, risks', title: 'Project brief', html: () => `<h1>Project brief</h1><p><i>One sentence on what this project is and why it matters.</i></p><h2>Goals</h2><ul><li><br></li></ul><h2>Scope</h2><p><b>In scope:</b> </p><p><b>Out of scope:</b> </p><h2>Timeline</h2>${tbl(['Milestone', 'Owner', 'Date'], [['Kick-off', '', ''], ['First draft', '', ''], ['Launch', '', '']])}<h2>Risks</h2><ul><li><br></li></ul>` },
+  { id: 'status', name: 'Weekly status', desc: 'Progress, plans and blockers', title: 'Weekly status', html: () => `<h1>Weekly status</h1><p><b>Week of:</b> ${date()}</p><h2>Done this week</h2><ul><li><br></li></ul><h2>Planned next week</h2><ul><li><br></li></ul><h2>Blockers</h2><ul><li><br></li></ul>` },
+  { id: 'todo', name: 'To-do list', desc: 'A checklist you can tick off', title: 'To-do list', html: () => `<h1>To-do list</h1>${checks(['First thing', 'Second thing', 'Third thing'])}` },
+  { id: 'proposal', name: 'Proposal', desc: 'Problem, solution, cost', title: 'Proposal', html: () => `<h1>Proposal</h1><h2>The problem</h2><p><br></p><h2>Our solution</h2><p><br></p><h2>Cost and timeline</h2>${tbl(['Item', 'Estimate', 'Notes'], [['', '', ''], ['', '', '']])}<h2>Next steps</h2>${checks(['Review this proposal', 'Agree scope', 'Sign off'])}` },
+  { id: 'letter', name: 'Letter', desc: 'A formal letter layout', title: 'Letter', html: () => `<p>${date()}</p><p><br></p><p>Dear [Name],</p><p><br></p><p>[Write your letter here.]</p><p><br></p><p>Sincerely,</p><p><br></p><p>[Your name]</p>` },
+  { id: 'resume', name: 'Resume', desc: 'Sections for a one-page CV', title: 'Resume', html: () => `<h1 style="text-align:center">Your Name</h1><p style="text-align:center">City · email@example.com · +00 0000 000000</p><hr><h2>Experience</h2><p><b>Role</b>, Company <i>(Month Year – Present)</i></p><ul><li>What you achieved, with a number.</li><li>What you built or led.</li></ul><h2>Education</h2><p><b>Degree</b>, School <i>(Year)</i></p><h2>Skills</h2><p>Skill, skill, skill</p>` },
+];
