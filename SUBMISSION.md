@@ -7,7 +7,7 @@
 ## Links
 - **Live product:** https://docs-lite-f4nn.onrender.com (free hosting: the first load after idle can take about a minute to wake up, and data resets on a restart)
 - **Walkthrough video (about 8 min):** https://youtu.be/MwuM--6dfTE (also in `WALKTHROUGH_VIDEO.txt`)
-- **Source and documents (Google Drive folder):** https://drive.google.com/file/d/1kBuQGjxjyJjBAVQXkbsW3wuZ1oDvhm8Q/view?usp=sharing (zip of the project; the same files are on GitHub: https://github.com/kushagrapatodia/docs-lite)
+- **Source and documents (Google Drive zip):** https://drive.google.com/file/d/1kBuQGjxjyJjBAVQXkbsW3wuZ1oDvhm8Q/view?usp=sharing (zip of the project; the same files are on GitHub: https://github.com/kushagrapatodia/docs-lite)
 - **Test accounts:** `alice`, `bob`, `carol`, password `demo123` (you can also create your own account)
 
 ## The brief, and how it is met
