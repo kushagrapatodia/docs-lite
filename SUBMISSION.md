@@ -6,7 +6,7 @@
 
 ## Links
 - **Live product:** https://docs-lite-f4nn.onrender.com (free hosting: the first load after idle can take about a minute to wake up, and data resets on a restart)
-- **Walkthrough video (3-5 min):** `<VIDEO_URL>` (also in `WALKTHROUGH_VIDEO.txt`)
+- **Walkthrough video (about 8 min):** https://youtu.be/MwuM--6dfTE (also in `WALKTHROUGH_VIDEO.txt`)
 - **Source and documents (Google Drive folder):** `<DRIVE_URL>`
 - **Test accounts:** `alice`, `bob`, `carol`, password `demo123` (you can also create your own account)
 

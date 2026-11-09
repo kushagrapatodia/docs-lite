@@ -1,2 +1,1 @@
-<VIDEO_URL>
-(Paste the walkthrough video link here after recording. See VIDEO_SCRIPT.md for a 4-minute outline.)
+https://youtu.be/MwuM--6dfTE
