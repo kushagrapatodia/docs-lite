@@ -2,6 +2,10 @@
 
 A collaborative document editor in the spirit of Google Docs, built as the Ajaia AI-Native Full Stack Developer take-home. No npm dependencies, no build step.
 
+**Live:** https://docs-lite-f4nn.onrender.com (sign in as `alice` / `demo123`, or use the one-click demo buttons). On the free host the first load after idle can take about a minute.
+
+**Source:** https://github.com/kushagrapatodia/docs-lite
+
 ![Documents page with live thumbnails](screenshots/01-documents.jpg)
 
 _Screenshots show sample data created while testing; a clean start has only the Welcome document._
