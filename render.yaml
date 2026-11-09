@@ -2,11 +2,7 @@ services:
   - type: web
     name: docs-lite
     runtime: docker
-    plan: starter
-    disk:
-      name: data
-      mountPath: /data
-      sizeGB: 1
+    plan: free # free tier: no persistent disk, so the database resets on restart (demo accounts are re-seeded). For persistence use plan: starter and add a disk mounted at /data.
     healthCheckPath: /readyz
     envVars:
       - key: DATA_DIR
